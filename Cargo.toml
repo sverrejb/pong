@@ -2,6 +2,7 @@
 name = "pong"
 version = "0.1.0"
 authors = ["Sverre Johann Bjørke"]
+edition = "2018"
 
 [dependencies]
 amethyst = "0.10.0"
