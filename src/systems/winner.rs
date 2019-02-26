@@ -3,7 +3,7 @@ use amethyst::{
     ecs::prelude::{Join, System, WriteStorage},
 };
 
-use pong::{Ball, ARENA_WIDTH};
+use crate::pong::{Ball, ARENA_WIDTH};
 
 pub struct WinnerSystem;
 

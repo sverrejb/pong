@@ -2,8 +2,8 @@ use amethyst::prelude::*;
 use amethyst::renderer::{DisplayConfig, DrawFlat2D, Event, Pipeline,
     RenderBundle, Stage, VirtualKeyCode};
 
+use amethyst::ui::{DrawUi, UiBundle};
 use amethyst::core::transform::TransformBundle;
-
 use amethyst::input::InputBundle;
 
 
@@ -28,7 +28,8 @@ fn main() -> amethyst::Result<()> {
     let pipe = Pipeline::build().with_stage(
         Stage::with_backbuffer()
             .clear_target([0.143, 0.168, 0.162, 1.0], 1.0)
-            .with_pass(DrawFlat2D::new()),
+            .with_pass(DrawFlat2D::new())
+            .with_pass(DrawUi::new()),
     );
 
     let game_data = GameDataBuilder::default()
