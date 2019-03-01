@@ -13,7 +13,7 @@ use crate::pong::Pong;
 
 
 fn main() -> amethyst::Result<()> {
-    amethyst::start_logger(Default::default());
+    //amethyst::start_logger(Default::default());
     let path = "./resources/display_config.ron";
     let config = DisplayConfig::load(&path);
 
