@@ -1,5 +1,4 @@
 use amethyst::assets::{AssetStorage, Loader};
-use amethyst::core::nalgebra::Vector3;
 use amethyst::core::transform::Transform;
 use amethyst::ecs::prelude::{Component, DenseVecStorage};
 use amethyst::prelude::*;
