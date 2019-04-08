@@ -2,7 +2,7 @@ use amethyst::prelude::*;
 use amethyst::renderer::{DisplayConfig, DrawFlat2D, Pipeline,
     RenderBundle, Stage};
 
-use amethyst::ui::{DrawUi};
+use amethyst::ui::{DrawUi, UiBundle};
 use amethyst::core::transform::TransformBundle;
 use amethyst::input::InputBundle;
 
