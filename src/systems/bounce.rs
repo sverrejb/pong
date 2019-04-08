@@ -3,7 +3,7 @@ use amethyst::{
     ecs::prelude::{Join, ReadStorage, System, WriteStorage},
 };
 
-use crate::pong::{Ball, Side, Paddle, ARENA_HEIGHT};
+use crate::pong::{Ball, Side::{Left, Right}, Paddle, ARENA_HEIGHT};
 
 pub struct BounceSystem;
 
@@ -48,9 +48,9 @@ impl<'s> System<'s> for BounceSystem {
                     paddle_x + paddle.width + ball.radius,
                     paddle_y + paddle.height + ball.radius,
                 ) {
-                    if paddle.side == Side::Left && ball.velocity[0] < 0.0 {
+                    if paddle.side == Left && ball.velocity[0] < 0.0 {
                         ball.velocity[0] = -ball.velocity[0];
-                    } else if paddle.side == Side::Right && ball.velocity[0] > 0.0 {
+                    } else if paddle.side == Right && ball.velocity[0] > 0.0 {
                         ball.velocity[0] = -ball.velocity[0];
                     }
                 }

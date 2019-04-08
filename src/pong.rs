@@ -1,5 +1,4 @@
 use amethyst::assets::{AssetStorage, Loader};
-use amethyst::core::nalgebra::Vector3;
 use amethyst::core::transform::Transform;
 use amethyst::ecs::prelude::{Component, DenseVecStorage, Entity};
 use amethyst::prelude::*;
@@ -14,8 +13,8 @@ pub const ARENA_WIDTH: f32 = 100.0;
 pub const PADDLE_HEIGHT: f32 = 16.0;
 pub const PADDLE_WIDTH: f32 = 4.0;
 
-pub const BALL_VELOCITY_X: f32 = 75.0;
-pub const BALL_VELOCITY_Y: f32 = 50.0;
+pub const BALL_VELOCITY_X: f32 = 50.0;
+pub const BALL_VELOCITY_Y: f32 = 25.0;
 pub const BALL_RADIUS: f32 = 2.0;
 
 fn initialise_camera(world: &mut World) {

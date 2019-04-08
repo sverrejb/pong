@@ -1,8 +1,8 @@
 use amethyst::prelude::*;
-use amethyst::renderer::{DisplayConfig, DrawFlat2D, Event, Pipeline,
-    RenderBundle, Stage, VirtualKeyCode};
+use amethyst::renderer::{DisplayConfig, DrawFlat2D, Pipeline,
+    RenderBundle, Stage};
 
-use amethyst::ui::{DrawUi, UiBundle};
+use amethyst::ui::{DrawUi};
 use amethyst::core::transform::TransformBundle;
 use amethyst::input::InputBundle;
 
@@ -13,7 +13,7 @@ use crate::pong::Pong;
 
 
 fn main() -> amethyst::Result<()> {
-    amethyst::start_logger(Default::default());
+    //amethyst::start_logger(Default::default());
     let path = "./resources/display_config.ron";
     let config = DisplayConfig::load(&path);
 
